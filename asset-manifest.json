@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.920e8704.css",
+    "main.js": "/portfolio/static/js/main.c362a164.js",
+    "static/js/787.3503cf78.chunk.js": "/portfolio/static/js/787.3503cf78.chunk.js",
+    "static/media/Untitled.png": "/portfolio/static/media/Untitled.43a632430bb4834cf07b.png",
+    "static/media/rick n momo.png": "/portfolio/static/media/rick n momo.25e3644205352cacc2e7.png",
+    "static/media/anime-site.png": "/portfolio/static/media/anime-site.4f3c9355caac659fabb7.png",
+    "static/media/fake-shop.png": "/portfolio/static/media/fake-shop.652f591a22b1fdbb3b59.png",
+    "static/media/store.png": "/portfolio/static/media/store.1768eac06bfee43afe9b.png",
+    "static/media/movie-app.png": "/portfolio/static/media/movie-app.60e61817eae125d1ee67.png",
+    "static/media/weather app.png": "/portfolio/static/media/weather app.0f7e68d58e3b75042a8e.png",
+    "static/media/random-joke.png": "/portfolio/static/media/random-joke.6b23cfcc1698bea062b7.png",
+    "index.html": "/portfolio/index.html",
+    "main.920e8704.css.map": "/portfolio/static/css/main.920e8704.css.map",
+    "main.c362a164.js.map": "/portfolio/static/js/main.c362a164.js.map",
+    "787.3503cf78.chunk.js.map": "/portfolio/static/js/787.3503cf78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.920e8704.css",
+    "static/js/main.c362a164.js"
+  ]
+}
