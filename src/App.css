@@ -359,7 +359,7 @@ nav .icon{
     right: 0; /* Slide the menu in when the 'open' class is applied */
   }
 /*mobile*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
  
     .header-text{
         font-size: 16px;

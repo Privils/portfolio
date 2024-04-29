@@ -19,7 +19,7 @@ const Header = () => {
     <header id='header'> 
       <div className="container">
         <nav>
-          <a href="#" className="logo">privils.dev</a>
+          <a href="#" className="logo">privilsDev</a>
           <ul id="sideMenu" className={isMenuOpen ? 'open' : ''}>
             <li><a href="#header" >home</a></li>
             <li><a href="#about" >about</a></li>
