@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4a7d1388.css",
+    "main.js": "/portfolio/static/js/main.3a65eebc.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/GAME.png": "/portfolio/static/media/GAME.3e4b75f9ca81978ce46f.png",
+    "static/media/food site.png": "/portfolio/static/media/food site.392f1c3e08767eba5e81.png",
+    "static/media/movie site.png": "/portfolio/static/media/movie site.ba0db2cfa65ef66fc057.png",
+    "static/media/ART.png": "/portfolio/static/media/ART.47317647b0dcce724a53.png",
+    "static/media/rickin.png": "/portfolio/static/media/rickin.41a098a25e99d373fc71.png",
+    "static/media/IMG-20240410-WA0001.jpg": "/portfolio/static/media/IMG-20240410-WA0001.a6eb0e77e954a5f3f3dc.jpg",
+    "static/media/weather app.png": "/portfolio/static/media/weather app.0f7e68d58e3b75042a8e.png",
+    "static/media/Privils-many thanks.pdf": "/portfolio/static/media/Privils-many thanks.df329151cb455248da3a.pdf",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.4a7d1388.css.map": "/portfolio/static/css/main.4a7d1388.css.map",
+    "main.3a65eebc.js.map": "/portfolio/static/js/main.3a65eebc.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a7d1388.css",
+    "static/js/main.3a65eebc.js"
+  ]
+}
