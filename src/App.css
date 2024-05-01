@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,14 +10,18 @@ html{
 body{
    background: black;
    color: #fff;
+   font-style: normal;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('./Components//images/IMG-20240410-WA0001.jpg');
+    background-image: url('./Components//images/359028.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
 }
 .container{
     padding: 10px 10%;
@@ -29,7 +34,7 @@ justify-content: space-between;
 }
 .logo{
     width: 140px;
-    color: white;
+    color: #ff004f;
     text-decoration: none;
     font-size: 3em;
     text-transform: capitalize;
@@ -98,11 +103,18 @@ flex-basis: 35%;
 .col-2{
     flex-basis: 60%;
 }
+#my-name{
+    font-size: 20px;
+    text-transform: capitalize;
+}
 .subtitle{
     text-transform: capitalize;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
 }
 .tabtitle{
     display: flex;
@@ -154,6 +166,9 @@ padding: 30px 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
 }
 .services-list div{
     background: #262626;
@@ -187,6 +202,9 @@ padding: 30px 0;
 /**/
 #portfolio{
 padding: 50px 0;
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: 400;
 }
 .work-list{
     display: grid;
@@ -269,6 +287,9 @@ padding: 50px 0;
 /*contact*/
 .contact-left{
     flex-basis: 35%;
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
 
 }
 .contact-left p{

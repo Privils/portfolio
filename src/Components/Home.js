@@ -10,7 +10,7 @@ import {
   FaGithub,
   FaExternalLinkAlt
 } from "react-icons/fa";
-import image1 from "./images/IMG-20240410-WA0001.jpg";
+import image1 from "./images/me.jpg";
 import image2 from "./images/movie site.png";
 import image3 from "./images/ART.png";
 import image4 from "./images/rickin.png";
@@ -47,12 +47,12 @@ const Home = () => {
         body: new FormData(e.target),
       });
       console.log("Success!", response);
- 
-      setFormData({
-        Name: "",
-        Email: "",
-        Message: "",
-      });
+      form.reset();
+
+      form.classList.add('submitted');
+      setTimeout(() => {
+        form.classList.remove('submitted');
+      }, 2000);
     } catch (error) {
       console.error("Error!", error.message);
     }
@@ -197,11 +197,11 @@ const Home = () => {
               <FaCrop className="crop" />
               <h2>fron-end</h2>
               <p>
-                Bring your website to life with our front-end development
-                expertise. Our skilled team harnesses the power of HTML, CSS,
+                Bring your website to life with my front-end development
+                expertise. I will use my skills of HTML, CSS,
                 and JavaScript to craft interactive and engaging user
                 interfaces. Whether you need a dynamic single-page application
-                or a fully-functional e-commerce platform, we deliver top-notch
+                or a fully-functional e-commerce platform, I deliver top-notch
                 front-end solutions that exceed your expectations...
               </p>
               <a href="#" onClick={toggleDetails}>
@@ -209,36 +209,16 @@ const Home = () => {
               </a>
               {showDetails && (
                 <div className="additional-details">
-                  <p>
-                    Transform your vision into stunning digital experiences with
-                    my knowledge of web design services. I specialize in
+                  <p> I specialize in
                     creating visually captivating and user-friendly websites
                     tailored to your unique brand identity. From responsive
                     layouts to custom graphics, I ensure your website stands out
                     in today's competitive digital landscape. <br />
-                    <strong>Front-end Development</strong> Bring your website to
-                    life with my front-end development expertise. I have
-                    harnessed the power of HTML, CSS, and JavaScript to craft
-                    interactive and engaging user interfaces. Whether you need a
-                    dynamic single-page application or a fully-functional
-                    e-commerce platform, I deliver top-notch front-end solutions
-                    that exceed your expectations. <br />{" "}
                     <strong>User Interface (UI) Development</strong>
                     Elevate your user experience with my UI development
                     services. I combine creativity and usability to design
                     intuitive interfaces that captivate and delight your
-                    audience. <br />{" "}
-                    <strong> Cross-Browser Compatibility</strong>I ensure your
-                    website reaches every audience with my cross-browser
-                    compatibility services. With my expertise, you can rest
-                    assured that your website delivers a consistent experience
-                    to every visitor, regardless of their browser choice. Reach
-                    your audience wherever they are with my responsive design
-                    services. I design and develop websites that adapt
-                    seamlessly to various screen sizes and devices, providing a
-                    consistent user experience across desktops, tablets, and
-                    smartphones. With my responsive designs, your website looks
-                    great on any device.
+                    audience.
                   </p>
                 </div>
               )}
@@ -248,9 +228,9 @@ const Home = () => {
               <FaCrop className="crop" />
               <h2>fullStack</h2>
               <p>
-                Experience the power of end-to-end web solutions with our
+                Experience the power of end-to-end web solutions with my
                 full-stack development services. From front-end interfaces to
-                back-end databases, we handle every aspect of your project with
+                back-end databases, I will handle every aspect of your project with
                 expertise and precision. Whether you need a dynamic web
                 application, a robust e-commerce platform, or a custom content
                 management system, we have the skills and experience to bring
@@ -305,7 +285,7 @@ const Home = () => {
                   Explore a vast collection of films from various genres. Watch trailers, read reviews, and discover your next cinematic adventure with ease
                 </p>*/
                }
-                <a href=" https://privils.github.io/privils_movie_hub/">
+                <a href="https://privils.github.io/movie-hub/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
               </div>
@@ -335,7 +315,7 @@ const Home = () => {
                   Immerse yourself in a world of gaming excitement. From action-packed shooters to immersive RPGs, find your next favorite game and join the fun.
                 </p>*/
                }
-                <a href=" https://privils.github.io/privils_play_portal/">
+                <a href=" https://privils.github.io/Game-Index/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
               </div>
@@ -406,9 +386,6 @@ const Home = () => {
               <div className="social-icons">
                 <a href="https://www.facebook.com/profile.php?id=100046809441429">
                   <FaFacebook />
-                </a>
-                <a href="#">
-                  <FaWhatsapp />
                 </a>
                 <a href="https://www.linkedin.com/in/privilledge-black-15b928291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <FaLinkedinIn />
