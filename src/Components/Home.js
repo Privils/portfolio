@@ -17,7 +17,7 @@ import image4 from "./images/rickin.png";
 import image5 from './images/food site.png';
 import image6 from './images/GAME.png';
 import image7 from './images/weather app.png';
-import document1 from './images/Privils-many thanks.pdf' 
+import document1 from './images/myCv.pdf' 
 
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -52,7 +52,7 @@ const Home = () => {
       form.classList.add('submitted');
       setTimeout(() => {
         form.classList.remove('submitted');
-      }, 2000);
+      }, 1000);
     } catch (error) {
       console.error("Error!", error.message);
     }
@@ -87,7 +87,7 @@ const Home = () => {
                 <span id="emjoyment">
                   art, music, chess, outtings and an un-defeated anime fan but
                   mostly I enjoy coding.Coding is one thing i spend most of my
-                  time doing so I can improve my skills little by little after
+                  time doing so I can improve my skills little by little after all
                   progress is progress no matter how small
                 </span>
               </p>
