@@ -15,13 +15,28 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('./Components//images/359028.jpg');
+    background-image: url('./Components/images/359028.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
    font-family: "Playfair Display", serif;
    font-optical-sizing: auto;
    font-weight: 400;
+}
+@media (max-width: 1024px) {
+    #header{
+        background-image: url('./Components/images/359028for1024.jpg');
+    }
+}
+@media (max-width: 768px) {
+    #header{
+        background-image: url('./Components/images/359028for\ 768.jpg');
+    }
+}
+@media (max-width: 425px) {
+    #header{
+        background-image: url('./Components/images/359028for225.jpg');
+    }
 }
 .container{
     padding: 10px 10%;
