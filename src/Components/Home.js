@@ -80,16 +80,12 @@ const Home = () => {
             <div className="col-2">
               <h1 className="subtitle">about me</h1>
               <p>
-                Hi my name is <span id="my-name">priviledge mushure</span> im 20
-                years old based in{" "}
-                <span id="state">cape town south africa</span>. I am very
-                passionate about about a lot of things some which include{" "}
-                <span id="emjoyment">
-                  art, music, chess, outtings and an un-defeated anime fan but
-                  mostly I enjoy coding.Coding is one thing i spend most of my
-                  time doing so I can improve my skills little by little after all
-                  progress is progress no matter how small
-                </span>
+                Hi my name is <span id="my-name">priviledge mushure</span> I am 21
+                years old based in <span>cape town south africa</span>. I am a very
+                passionate developer who thrives to bring out his best abilities and focus into making
+                beautifull websites, not only am I passionate about coding amongst many more I also enjoy  <span  id="my-name">art</span>, <span  id="my-name">music</span>, experiencing new things and <span  id="my-name">chess</span>.
+                I put my best effort into anything I am passionate about and strive to reach my goals, even if they seem beyond my reach.
+                
               </p>
               <div className="tabtitle">
                 <p
@@ -126,14 +122,19 @@ const Home = () => {
               >
                 <ul>
                   <li>
-                    <span>fron-end</span>
+                    <span>Front-End</span>
                     <br />
                     HTML5
                     <br />
                     CSS 3<br />
-                    REACT <br />
-                    JAVASCRIPT
+                    Bootstrap <br />
+                    React <br />
+                    JavaScript <br />
+                    Git <br />
+                    NPM
                   </li>
+                  {
+                    /*
                   <li>
                     <span>fullStack</span>
                     <br />
@@ -147,7 +148,9 @@ const Home = () => {
                     Postgres <br />
                     Express.JS <br />
                     <br />
-                  </li>
+                  </li>*/
+}
+
                 </ul>
               </div>
               <div
@@ -195,14 +198,9 @@ const Home = () => {
           <div className="services-list">
             <div>
               <FaCrop className="crop" />
-              <h2>fron-end</h2>
+              <h2>Front-End Development</h2>
               <p>
-                Bring your website to life with my front-end development
-                expertise. I will use my skills of HTML, CSS,
-                and JavaScript to craft interactive and engaging user
-                interfaces. Whether you need a dynamic single-page application
-                or a fully-functional e-commerce platform, I deliver top-notch
-                front-end solutions that exceed your expectations...
+              Bring your website to life with my front-end development expertise. I utilize my skills in HTML, CSS, Bootstrap, and JavaScript to create interactive and engaging user interfaces. Whether you need a dynamic single-page application or a fully functional e-commerce platform, I deliver top-notch front-end solutions that exceed your expectations. By focusing on responsive design and user experience, I ensure your site looks great on all devices and provides a seamless experience for your users. Let's collaborate to build a visually appealing and highly functional website that stands out.
               </p>
               <a href="#" onClick={toggleDetails}>
                 learn more
@@ -223,7 +221,8 @@ const Home = () => {
                 </div>
               )}
             </div>
-
+              {
+                /*
             <div>
               <FaCrop className="crop" />
               <h2>fullStack</h2>
@@ -267,6 +266,8 @@ const Home = () => {
                 </div>
               )}
             </div>
+             */
+            }
           </div>
         </div>
       </div>
@@ -377,7 +378,7 @@ const Home = () => {
               <h1 className="subtitle">contact me</h1>
               <p>
                 <FaEnvelope className="leftIcon" />
-                privilledgeblack47@gmail.com
+                privilledgeblack8@gmail.com
               </p>
               <p>
                 <FaPhone className="leftIcon" />

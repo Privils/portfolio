@@ -95,8 +95,13 @@ nav ul li a:hover::after{
     text-transform: capitalize;
     font-weight: 500;
 }
-.header-text h1 span{
+.header-text h1 span, i span{
     color: #ff004f;
+}
+#Jobtitle{
+    text-transform: capitalize;
+    font-size:30px;
+    text-decoration: underline;
 }
 /*about*/
 #about{
@@ -119,8 +124,8 @@ flex-basis: 35%;
     flex-basis: 60%;
 }
 #my-name{
-    font-size: 20px;
     text-transform: capitalize;
+    color: #fff;
 }
 .subtitle{
     text-transform: capitalize;

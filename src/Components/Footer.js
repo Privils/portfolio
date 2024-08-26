@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
          <div class="copyrite">
-        <p>copyrite privils.dev . Made with <FaHeart className='footericon'/> by priviledge</p>
+        <p>copyrite PrivilsWebDev . Made with <FaHeart className='footericon'/> by priviledge</p>
     </div>
     </div>
   )
