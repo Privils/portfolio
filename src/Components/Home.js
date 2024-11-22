@@ -80,13 +80,18 @@ const Home = () => {
             <div className="col-2">
               <h1 className="subtitle">about me</h1>
               <p>
-                Hi my name is <span id="my-name">priviledge mushure</span> I am 21
-                years old based in <span>cape town south africa</span>. I am a very
-                passionate developer who thrives to bring out his best abilities and focus into making
-                beautifull websites, not only am I passionate about coding amongst many more I also enjoy  <span  id="my-name">art</span>, <span  id="my-name">music</span>, experiencing new things and <span  id="my-name">chess</span>.
-                I put my best effort into anything I am passionate about and strive to reach my goals, even if they seem beyond my reach.
-                
-              </p>
+              Hi, my name is <span id="my-name">Priviledge Mushure</span>, and
+              I am a 21-year-old developer based in{" "}
+              <span>Cape Town, South Africa</span>. I am deeply passionate
+              about software development, always striving to push my abilities
+              and create beautiful, functional websites. Beyond coding, I have
+              a variety of other interests, including{" "}
+              <span id="my-name">art</span>, <span id="my-name">music</span>,
+              exploring new experiences, and <span id="my-name">chess</span>.
+              I pour my heart and effort into everything I am passionate
+              about, constantly working towards my goals—no matter how
+              ambitious they may seem.
+            </p>
               <div className="tabtitle">
                 <p
                   className={`tab-links ${
@@ -134,21 +139,15 @@ const Home = () => {
                     NPM
                   </li>
                   {
-                    /*
+                    
                   <li>
-                    <span>fullStack</span>
-                    <br />
-                    HTML5
-                    <br />
-                    CSS 3<br />
-                    REACT <br />
-                    JAVASCRIPT
+                    <span>back-end</span>
                     <br />
                     Node.js <br />
                     Postgres <br />
                     Express.JS <br />
                     <br />
-                  </li>*/
+                  </li>
 }
 
                 </ul>
@@ -163,8 +162,19 @@ const Home = () => {
                   <li>
                     <span>currently</span>
                     <br />
-                    study/learning experience 
+                   <strong> study/learning experience </strong>
                   </li>
+                  <li>
+                    <strong>Internship - frontend Developer</strong> | kreativestorm |
+                    <p>
+                      During my internship at kreativestorm, I worked on
+                      developing and maintaining websites, improving user
+                      interfaces, and optimizing web performance. I gained
+                      hands-on experience with HTML, CSS ,JavaScript and
+                      collaborated with other developers to bring projects to
+                      completion.
+                    </p>
+                    </li>
                 </ul>
               </div>
 
@@ -202,72 +212,8 @@ const Home = () => {
               <p>
               Bring your website to life with my front-end development expertise. I utilize my skills in HTML, CSS, Bootstrap, and JavaScript to create interactive and engaging user interfaces. Whether you need a dynamic single-page application or a fully functional e-commerce platform, I deliver top-notch front-end solutions that exceed your expectations. By focusing on responsive design and user experience, I ensure your site looks great on all devices and provides a seamless experience for your users. Let's collaborate to build a visually appealing and highly functional website that stands out.
               </p>
-              <a href="#" onClick={toggleDetails}>
-                learn more
-              </a>
-              {showDetails && (
-                <div className="additional-details">
-                  <p> I specialize in
-                    creating visually captivating and user-friendly websites
-                    tailored to your unique brand identity. From responsive
-                    layouts to custom graphics, I ensure your website stands out
-                    in today's competitive digital landscape. <br />
-                    <strong>User Interface (UI) Development</strong>
-                    Elevate your user experience with my UI development
-                    services. I combine creativity and usability to design
-                    intuitive interfaces that captivate and delight your
-                    audience.
-                  </p>
-                </div>
-              )}
+              
             </div>
-              {
-                /*
-            <div>
-              <FaCrop className="crop" />
-              <h2>fullStack</h2>
-              <p>
-                Experience the power of end-to-end web solutions with my
-                full-stack development services. From front-end interfaces to
-                back-end databases, I will handle every aspect of your project with
-                expertise and precision. Whether you need a dynamic web
-                application, a robust e-commerce platform, or a custom content
-                management system, we have the skills and experience to bring
-                your vision to life.
-              </p>
-              <a href="#" onClick={toggleDetails}>
-                learn more
-              </a>
-              {showDetails && (
-                <div className="additional-details">
-                  <p> My Full-Stack Web Development
-                    knowledge will give you the power of end-to-end web solutions with my
-                    full-stack development services. From front-end interfaces
-                    to back-end databases, I handle every aspect of your
-                    project with expertise and precision. Whether you need a
-                    dynamic web application, a robust e-commerce platform, or a
-                    custom content management system, I have the skills and to bring your vision to life.
-                   <br /><strong>  Custom Web
-                    Application Development </strong> Empower your business with custom
-                    web applications tailored to your unique needs. I
-                    specializes in building scalable and secure
-                    web applications that streamline your operations and drive
-                    growth. From project management tools to customer portals,
-                    I will develop custom solutions that will solve your business
-                    challenges and deliver tangible results. <br /><strong>Back-end
-                    Development</strong> I will build a strong foundation for your web
-                    applications with My back-end development expertise. My
-                    skills as a developer architect and server-side solutions
-                    will power your applications with speed, security, and
-                    scalability. From database design to API development, I
-                    ensure seamless integration and reliable performance for
-                    your web applications.
-                  </p>
-                </div>
-              )}
-            </div>
-             */
-            }
           </div>
         </div>
       </div>
@@ -280,12 +226,7 @@ const Home = () => {
               <img src={image2} alt="" />
               <div className="layer">
                 <h3>Movie site</h3>
-               {
-                /* <p>
-                  <strong>description</strong> <br />
-                  Explore a vast collection of films from various genres. Watch trailers, read reviews, and discover your next cinematic adventure with ease
-                </p>*/
-               }
+              
                 <a href="https://privils.github.io/movie-hub/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -295,12 +236,7 @@ const Home = () => {
               <img src={image5} alt="" />
               <div className="layer">
                 <h3>Food site</h3>
-               {
-                /* <p>
-                  <strong>description</strong> <br />
-                Indulge your senses in a culinary journey. From mouthwatering recipes to restaurant reviews and cooking tips, satisfy your cravings and elevate your dining experience.
-                  </p>*/
-               }
+             
                 <a href=" https://privils.github.io/privils_food_site/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -310,12 +246,7 @@ const Home = () => {
               <img src={image6} alt="" />
               <div className="layer">
                 <h3>Game site</h3>
-               {
-                /* <p>
-                  <strong>description</strong> <br />
-                  Immerse yourself in a world of gaming excitement. From action-packed shooters to immersive RPGs, find your next favorite game and join the fun.
-                </p>*/
-               }
+            
                 <a href=" https://privils.github.io/Game-Index/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -325,12 +256,7 @@ const Home = () => {
               <img src={image3} alt="" />
               <div className="layer">
                 <h3>ART site</h3>
-               {
-                /* <p>
-                  <strong>description</strong> <br />
-                  Immerse yourself in a vibrant gallery of creativity. Explore diverse artworks, from traditional paintings to digital masterpieces, and uncover inspiration at every click.
-                </p>*/
-               }
+              
                 <a href=" https://privils.github.io/art/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -340,10 +266,7 @@ const Home = () => {
               <img src={image7} alt="" />
               <div className="layer">
                 <h3>Weather site</h3>
-              {/*  <p>
-                  <strong>description</strong> <br />
-                Stay ahead of the forecast with our intuitive weather app. Get real-time updates, hourly forecasts, and weather alerts to plan your day effectively. </p>*/
-              }
+             
                 <a href="https://privils.github.io/daily_weather/">
                 <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -353,12 +276,7 @@ const Home = () => {
               <img src={image4} alt="" />
               <div className="layer">
                 <h3>rick n momo</h3>
-               {
-                /* <p>
-                  <strong>description</strong> <br />
-                  Delve into the bizarre and hilarious universe of Rick and Morty. Dive deep into episode guides, character profiles, and fan theories.
-                </p>*/
-               }
+              
                 <a href="https://privils.github.io/rickNmomo/">
                   <FaExternalLinkAlt className="FaExternalLinkAlt"/>
                 </a>
@@ -385,9 +303,7 @@ const Home = () => {
                 0659165816
               </p>
               <div className="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=100046809441429">
-                  <FaFacebook />
-                </a>
+               
                 <a href="https://www.linkedin.com/in/privilledge-black-15b928291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <FaLinkedinIn />
                 </a>
