@@ -399,6 +399,14 @@ nav .icon{
   #sideMenu.open {
     right: 0; /* Slide the menu in when the 'open' class is applied */
   }
+  #note{
+    color: #ff004f;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .education{
+    color: #b547b5;
+  }
 /*mobile*/
 @media (max-width: 800px) {
  
