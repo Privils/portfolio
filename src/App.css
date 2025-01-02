@@ -31,13 +31,15 @@ body{
 @media (max-width: 768px) {
     #header{
         background-image: url('./Components/images/359028for\ 768.jpg');
+        background-position: center;
+        /* background: none; */
     }
 }
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
     #header{
         background-image: url('./Components/images/359028for225.jpg');
     }
-}
+} */
 .container{
     padding: 10px 10%;
 }
