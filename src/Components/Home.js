@@ -28,6 +28,7 @@ const Home = () => {
     message: "",
   });
 
+  // Handles input field changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -35,38 +36,37 @@ const Home = () => {
       [name]: value,
     }));
   };
-
   const handleSubmit = async (e) => {
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxNggxheJXnAa_Q53wxpFRPZxg0Gnzgwc4fAsjU7qgmsslYA0dOnf3CReoa0QOy8a8y/exec";
-    const form = document.forms["submit-to-google-sheet"];
-
     e.preventDefault();
     try {
-      const response = await fetch(scriptURL, {
+      const response = await fetch("http://localhost:5000/submit", {
         method: "POST",
-        body: new FormData(e.target),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
-      console.log("Success!", response);
-      form.reset();
-
-      form.classList.add("submitted");
-      setTimeout(() => {
-        form.classList.remove("submitted");
-      }, 1000);
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" }); // Clear the form
+      } else {
+        alert("Failed to send message.");
+      }
     } catch (error) {
-      console.error("Error!", error.message);
+      console.error("Error:", error);
     }
   };
 
-  const openTab = (tabName) => {
-    setTab(tabName);
-  };
+  // Toggles detail view
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
 
-  const thanks = async () => {
+  // Opens a specific tab
+  const openTab = (tabName) => {
+    setTab(tabName);
+  };
+
+  // Example thank-you alert
+  const thanks = () => {
     alert("Thank you for trying out my portfolio website");
   };
   return (
@@ -80,10 +80,10 @@ const Home = () => {
             <div className="col-2">
               <h1 className="subtitle">about me</h1>
               <p>
-                Hi, my name is <span id="my-name">Priviledge Mushure</span>, and
+                Hi, my name is <span id="my-name">Priviledge M</span>, and
                 I am a 21-year-old developer based in{" "}
                 <span>Cape Town, South Africa</span>. I am deeply passionate
-                about software development, always striving to push my abilities
+                about web development, always striving to push my abilities
                 and create beautiful, functional websites. Beyond coding, I have
                 a variety of other interests, including{" "}
                 <span id="my-name">art</span>, <span id="my-name">music</span>,
@@ -344,22 +344,25 @@ const Home = () => {
                   type="text"
                   name="Name"
                   placeholder="your Name"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
-                  disabled
                 />
                 <input
                   type="email"
                   name="Email"
                   placeholder="Your email"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
-                  disabled
                 />
                 <textarea
                   name="Message"
                   rows="6"
                   placeholder="your Message"
+                  value={formData.message}
+                  onChange={handleChange}
                   required
-                  disabled
                 ></textarea>
                 <button type="submit" className="btn btn2" onSubmit={thanks}>
                   submit

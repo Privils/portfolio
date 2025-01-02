@@ -472,3 +472,13 @@ flex-basis: 100%;
         font-size: 30px;
     }
 }
+@media (max-width: 440px) {
+    .logo{
+        width: 140px;
+        color: #ff004f;
+        text-decoration: none;
+        font-size: 1.8em !important;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+}
