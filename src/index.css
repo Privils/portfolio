@@ -1,0 +1,44 @@
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+ /* .services  */
+
+  
+
+
+  .btn {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #e5c100; /* Darker gold on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section {
+      width: 100%; /* Full width for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .social-icons a {
+      font-size: 1.5em; /* Smaller social icon size on mobile */
+    }
+  }
+  

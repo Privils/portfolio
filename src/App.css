@@ -32,7 +32,6 @@ body{
     #header{
         background-image: url('./Components/images/359028for\ 768.jpg');
         background-position: center;
-        /* background: none; */
     }
 }
 /* @media (max-width: 425px) {
@@ -307,21 +306,34 @@ font-weight: 400;
     background-color: #ff004f;
 }
 /*contact*/
+#contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 100%;
    font-family: "Playfair Display", serif;
    font-optical-sizing: auto;
    font-weight: 400;
-
+   background: red;
+   align-items: center;
 }
 .contact-left p{
     margin-top: 30px;
 }
-.contact-left p .leftIcon{
+ .leftIcon{
     color: #ff004f;
     margin-right: 5px;
     font-size: 18px;
 }
+.leftIcon:hover{
+    color: #ffffff;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+
 .footericon{
     color: #ff004f;
     margin: 5px;
@@ -340,6 +352,7 @@ font-weight: 400;
 .social-icons a:hover{
     color: #ff004f;
     cursor: pointer;
+    transition: .5s ease-in;
    }
 .contact-right{
     flex-basis: 35%;
@@ -389,7 +402,16 @@ cursor: pointer;
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+}
+.copyrite p a{
+    color: #fff;
+    text-decoration: none;
+
+
+}
+.copyrite p a:hover{
+    color: #ff004f;
+transition: 1s ease-in;
 }
 .copyrite i {
     color: #ff004f;
@@ -399,7 +421,7 @@ nav .icon{
 }
 
   #sideMenu.open {
-    right: 0; /* Slide the menu in when the 'open' class is applied */
+    right: 0; 
   }
   #note{
     color: #ff004f;
@@ -409,7 +431,63 @@ nav .icon{
   .education{
     color: #b547b5;
   }
+  /* footer */
+  #footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+    
+ #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    width: 30%; 
+    margin-bottom: 20px;
+  }
+  .footer-heading {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:   #ff004f;
+  }
+ .footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  .leftIcon {
+    margin-right: 10px;
+  }
+  .footer-section p a {
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+  .footer-ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+   
+  .footer-ul li::before {
+    content: "• ";
+    color: #ff004f;
+  }
+  
+  
 /*mobile*/
+
 @media (max-width: 800px) {
  
     .header-text{
@@ -473,6 +551,14 @@ flex-basis: 100%;
         margin-top: 20%;
         font-size: 30px;
     }
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        background: red;
+      }
+      .social-icons a {
+        font-size: 1.5em; 
+      }
 }
 @media (max-width: 440px) {
     .logo{

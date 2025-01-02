@@ -310,30 +310,8 @@ const Home = () => {
       </div>
 
       <div id="contact">
-        <div className="container">
-          <div className="row">
-            <div className="contact-left">
-              <h1 className="subtitle">contact me</h1>
-              <p>
-                <FaEnvelope className="leftIcon" />
-               contact@privilswebdev.co.za
-              </p>
-              <p>
-                <FaPhone className="leftIcon" />
-                0659165816
-              </p>
-              <div className="social-icons">
-                <a href="https://www.linkedin.com/in/priviledge-black-15b928291">
-                  <FaLinkedinIn />
-                </a>
-                <a href="https://github.com/Privils">
-                  <FaGithub />
-                </a>
-              </div>
-              <a href={document1} download className="btn btn2">
-                download cv
-              </a>
-            </div>
+     
+{/* 
             <div className="contact-right">
               <span id="note">
                 *please note this area is still under construction please
@@ -369,8 +347,7 @@ const Home = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </div>
+             */}
       </div>
     </>
   );
