@@ -46,7 +46,7 @@ const Home = () => {
       });
       if (response.ok) {
         alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Clear the form
+        setFormData({ name: "", email: "", message: "" }); 
       } else {
         alert("Failed to send message.");
       }
@@ -55,17 +55,15 @@ const Home = () => {
     }
   };
 
-  // Toggles detail view
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
 
-  // Opens a specific tab
   const openTab = (tabName) => {
     setTab(tabName);
   };
 
-  // Example thank-you alert
+
   const thanks = () => {
     alert("Thank you for trying out my portfolio website");
   };
@@ -221,7 +219,7 @@ const Home = () => {
             <div>
               <FaCrop className="crop" />
               <h2>Front-End Development</h2>
-              <p>
+              <p className="myServices">
                 Bring your website to life with my front-end development
                 expertise. I utilize my skills in HTML, CSS, Bootstrap, and
                 JavaScript to create interactive and engaging user interfaces.
@@ -307,47 +305,6 @@ const Home = () => {
             see more
           </a>
         </div>
-      </div>
-
-      <div id="contact">
-     
-{/* 
-            <div className="contact-right">
-              <span id="note">
-                *please note this area is still under construction please
-                contact me via my email or cell
-              </span>
-              <form name="submit-to-google-sheet" onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="your Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="email"
-                  name="Email"
-                  placeholder="Your email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <textarea
-                  name="Message"
-                  rows="6"
-                  placeholder="your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-                <button type="submit" className="btn btn2" onSubmit={thanks}>
-                  submit
-                </button>
-              </form>
-            </div>
-             */}
       </div>
     </>
   );

@@ -8,7 +8,6 @@ const Footer = () => {
       <div id="footer">
   <div className="container" id="container">
     <div className="row" id="row">
-      {/* Contact Section */}
       <div className="footer-section contact">
         <h2 className="footer-heading">Contact Me</h2>
         <p>
@@ -35,22 +34,18 @@ const Footer = () => {
           Download CV
         </a>
       </div>
-
-      {/* Location Section */}
       <div className="footer-section location">
         <h2 className="footer-heading">Location</h2>
         <p>
           <FaMapMarkerAlt className="leftIcon" />
-          Johannesburg, South Africa
+          Cape Town, South Africa
         </p>
       </div>
-
-      {/* Services Section */}
       <div className="footer-section services">
         <h2 className="footer-heading">Services</h2>
         <ul className="footer-ul">
           <li className="footer-li">Front-End Development</li>
-          <li className="footer-li">UI/UX Design</li>
+          <li className="footer-li">Web Hosting</li>
           <li className="footer-li">Website Maintenance</li>
         </ul>
       </div>
