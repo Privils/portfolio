@@ -293,7 +293,7 @@ const Home = () => {
             <div className="work">
               <img src={image4} alt="" />
               <div className="layer">
-                <h3>rick n momo</h3>
+                <h3>animals</h3>
 
                 <a href="https://privils.github.io/animalLover/">
                   <FaExternalLinkAlt className="FaExternalLinkAlt" />
