@@ -16,7 +16,7 @@
   
 
 
-  .btn {
+  /* .btn {
     display: inline-block;
     background-color: #FFD700;
     color: #333;
@@ -28,17 +28,24 @@
   }
   
   .btn:hover {
-    background-color: #e5c100; /* Darker gold on hover */
+    background-color: #e5c100; 
   }
   
   @media (max-width: 768px) {
     .footer-section {
-      width: 100%; /* Full width for smaller screens */
+      width: 100%; 
       margin-bottom: 20px;
     }
   
     .social-icons a {
-      font-size: 1.5em; /* Smaller social icon size on mobile */
+      font-size: 1.5em; 
     }
-  }
+  } */
   
+  /* Styles for Services Component */
+
+
+
+
+
+

@@ -13,10 +13,10 @@ import {
 import image1 from "./images/me.jpg";
 import image2 from "./images/movie site.png";
 import image3 from "./images/ART.png";
-import image4 from "./images/rickin.png";
+import image4 from "./images/animals.png";
 import image5 from "./images/food site.png";
 import image6 from "./images/GAME.png";
-import image7 from "./images/weather app.png";
+import image7 from "./images/shopping.png";
 import document1 from "./images/myCv.pdf";
 
 const Home = () => {
@@ -229,7 +229,7 @@ const Home = () => {
                 responsive design and user experience, I ensure your site looks
                 great on all devices and provides a seamless experience for your
                 users. Let's collaborate to build a visually appealing and
-                highly functional website that stands out.
+                highly functional website that stands out. <a href="./Services" className="readmore">read more</a>
               </p>
             </div>
           </div>
@@ -283,9 +283,9 @@ const Home = () => {
             <div className="work">
               <img src={image7} alt="" />
               <div className="layer">
-                <h3>Weather site</h3>
+                <h3>shopping site</h3>
 
-                <a href="https://privils.github.io/daily_weather/">
+                <a href="https://privils.github.io/ElegentClothingStore/">
                   <FaExternalLinkAlt className="FaExternalLinkAlt" />
                 </a>
               </div>
@@ -295,7 +295,7 @@ const Home = () => {
               <div className="layer">
                 <h3>rick n momo</h3>
 
-                <a href="https://privils.github.io/rickNmomo/">
+                <a href="https://privils.github.io/animalLover/">
                   <FaExternalLinkAlt className="FaExternalLinkAlt" />
                 </a>
               </div>
