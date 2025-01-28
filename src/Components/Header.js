@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa"; 
 
@@ -12,7 +10,7 @@ const Header = () => {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the value of isMenuOpen
+    setIsMenuOpen(!isMenuOpen); 
   };
 
   return (
@@ -26,9 +24,9 @@ const Header = () => {
             <li><a href="#services" >services</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
-            <li onClick={toggleMenu}><FaTimes className='icon' /></li> {/* Close icon */}
+            <li onClick={toggleMenu}><FaTimes className='icon' /></li> 
           </ul>
-          <FaBars className='icon' onClick={toggleMenu} /> {/* Menu icon */}
+          <FaBars className='icon' onClick={toggleMenu} /> 
         </nav>
         <div className="header-text">
         <p id='Jobtitle'>front-end developemt</p>

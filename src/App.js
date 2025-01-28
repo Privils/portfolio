@@ -1,30 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import Header from './Components/Header';
-// import Home from './Components/Home';
-// import Footer from './Components/Footer';
-// import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-// import Services from './Components/Services';
-
-// function App() {
-//   return (
-//    <>
-//    <Router>
-//    <Header />
-//    <Routes>
-//     <Route index Component={<Home/>}/>
-//     <Route path='/Services' Component={<Services/>}/>
-//    </Routes>
-//    <Footer/>
-//    </Router>
-//    </>
-//   );
-// }
-
-// export default App;
-
-
-
 import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
