@@ -1,13 +1,25 @@
-import React from 'react'
-import '../index.css'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+    useEffect(() => {
+      AOS.init();
+    }, []);
+  
   return (
   <>
-   <div className="container my-5 bc-im">
+   <div className="container my-5 bc-im"
+     data-aos="fade-up"
+     data-aos-easing="ease"
+    data-aos-duration="1000"
+    >
       <h1 className="text-center">Our Services</h1>
-      {/* Front-End Web Development */}
-      <div className="service-section">
+      <div className="service-section" 
+        data-aos="fade-up"
+        data-aos-easing="ease"
+       data-aos-duration="1000"
+       >
         <h2 className='service-header'>1. Front-End Web Development</h2>
         <p className='Heading'><strong>What is Front-End Web Development?</strong></p>
         <p>
@@ -35,7 +47,10 @@ const Services = () => {
       </div>
 
 
-      <div className="service-section">
+      <div className="service-section" 
+        data-aos="fade-up"
+        data-aos-easing="ease"
+       data-aos-duration="1000">
         <h2>2. Hosting Services</h2>
         <p><strong>What is Website Hosting?</strong></p>
         <p>
@@ -56,7 +71,11 @@ const Services = () => {
       </div>
 
       {/* Website Management */}
-      <div className="service-section">
+      <div className="service-section" 
+        data-aos="fade-up"
+        data-aos-easing="ease"
+       data-aos-duration="1000"
+       >
         <h2>3. Website Management</h2>
         <p><strong>What is Website Management?</strong></p>
         <p>
@@ -82,7 +101,10 @@ const Services = () => {
       </div>
 
       {/* How We Work */}
-      <div className="how-we-work mt-5">
+      <div className="how-we-work mt-5"  
+       data-aos="fade-up"
+             data-aos-easing="ease"
+            data-aos-duration="1000">
         <h3 className="text-center mb-4">How We Work</h3>
         <ol>
           <li>Consultation: Free consultation to understand your needs.</li>

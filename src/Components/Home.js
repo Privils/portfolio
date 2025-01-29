@@ -24,56 +24,22 @@ import 'aos/dist/aos.css'
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
   const [tab, setTab] = useState("skills");
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  // Handles input field changes
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:5000/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        alert("Failed to send message.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
   const toggleDetails = () => {
     setShowDetails(!showDetails);
   };
-
   const openTab = (tabName) => {
     setTab(tabName);
   };
 
 useEffect(()=>{
-  AOS.init()
-}, [])
+  AOS.init();
+}, []);
   return (
     <>
       <div id="about"  
       data-aos="fade-up"
       data-aos-easing="linear"
-     data-aos-duration="1000"
+     data-aos-duration="1300"
      >
         <div className="container">
           <div className="row">
@@ -166,7 +132,7 @@ useEffect(()=>{
                     <br />
                     <p className="education">
                       <strong> study/learning experience </strong>
-                    </p>{" "}
+                    </p>
                     | codeCademy |
                     <p>
                       Completed comprehensive courses on Codecademy, gaining
@@ -180,7 +146,7 @@ useEffect(()=>{
                   <li>
                     <p className="education">
                       <strong>Internship - frontend Developer</strong>
-                    </p>{" "}
+                    </p> 
                     | kreativestorm |
                     <p>
                       During my internship at kreativestorm, I worked on
@@ -220,12 +186,13 @@ useEffect(()=>{
 
       <div id="services">
         <div className="container"
-             data-aos="fade-down"
-             data-aos-easing="ease"
-            data-aos-duration="1000"
+            
             >
           <h1 className="subtitle">my services</h1>
-          <div className="services-list">
+          <div className="services-list"
+            data-aos="fade-up"
+             data-aos-easing="ease"
+            data-aos-duration="1000">
             <div>
               <FaCrop className="crop" />
               <h2>Front-End Development</h2>
@@ -376,6 +343,7 @@ useEffect(()=>{
              
               <h3>D-M-Projects</h3>
             </div>
+          </div>
           </div>
 
       </section>

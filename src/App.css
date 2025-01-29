@@ -1,54 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
+    scrollbar-color: #ff004f black; 
+    scrollbar-width: auto;
 }
-body{
-   background: black;
-   color: #fff;
-   font-style: normal;
+
+body {
+    background: black;
+    color: #fff;
+    font-style: normal;
 }
-#header{
+
+
+
+
+
+
+#header {
     width: 100%;
     height: 100vh;
     background-image: url('./Components/images/359028.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-   font-family: "Playfair Display", serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    position: relative;
 }
+
+
 @media (max-width: 1024px) {
-    #header{
+    #header {
         background-image: url('./Components/images/359028for1024.jpg');
     }
 }
+
 @media (max-width: 768px) {
-    #header{
+    #header {
         background-image: url('./Components/images/359028for\ 768.jpg');
         background-position: center;
     }
 }
-/* @media (max-width: 425px) {
-    #header{
-        background-image: url('./Components/images/359028for225.jpg');
-    }
-} */
-.container{
+
+.container {
     padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
-
-justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 10%;
+    transition: all 0.3s ease-in-out;
 }
-.logo{
+
+.logo {
     width: 140px;
     color: #ff004f;
     text-decoration: none;
@@ -56,12 +71,14 @@ justify-content: space-between;
     text-transform: capitalize;
     cursor: pointer;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -69,7 +86,8 @@ nav ul li a{
     text-transform: capitalize;
     cursor: pointer;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -79,26 +97,33 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
-    width: 100%;
 
-}
-.header-text{
+nav ul li a:hover::after {
     width: 100%;
-    margin-top: 20%;
+}
+
+/* Header text styling */
+.header-text {
+    width: 100%;
+    margin-top: 20%; /* Adjust the positioning of the header text */
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-.intro{
+
+.intro {
     text-transform: capitalize;
     font-weight: 500;
 }
-.header-text h1 span, i span{
+
+.header-text h1 span,
+i span {
     color: #ff004f;
 }
+
 #Jobtitle{
     text-transform: capitalize;
     font-size:30px;
@@ -219,6 +244,7 @@ padding: 30px 0;
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
+    color: #fff;
 }
 .bc-im{
     background: #000000;
@@ -239,8 +265,10 @@ list-style-type: lower-greek;
     padding-left: 0;
   }
   .readmore{
-    color: black !important;
-    text-decoration: underline !important;
+    color: rgb(0, 0, 0) !important;
+    text-decoration: underline #fff !important;
+    margin-left: 2vw;
+    font-size: 1.2em !important;
   }
   .service-section ul li {
     padding-left: 1rem;
@@ -362,11 +390,11 @@ font-weight: 400;
     background-color: #ff004f;
 }
 /*contact*/
-#contact{
+/* #contact{
     display: flex;
     justify-content: center;
     width: 100%;
-}
+} */
 .contact-left{
     flex-basis: 100%;
    font-family: "Playfair Display", serif;
@@ -550,7 +578,7 @@ nav .icon{
     height: 100%;
     display: flex; 
     flex-wrap: nowrap;
-    justify-content: flex-start; 
+    justify-content: center; 
     padding: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
