@@ -332,7 +332,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -366,7 +366,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -388,7 +388,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -410,7 +410,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -432,7 +432,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -454,7 +454,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -476,7 +476,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -498,7 +498,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -520,7 +520,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -541,7 +541,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -562,7 +562,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -583,7 +583,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                 src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -605,7 +605,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/clients/logo.jpg")}
+                src={require("./images/359028.jpg")}
                 alt="d-m-projects logo"
                 className="client-img"
               />
@@ -615,28 +615,7 @@ const Home = () => {
               <h3>D-M-Projects</h3>
             </div>
           </div>
-          
-          <div className="testimonial-container">
-            <p>
-              We are extremely pleased with the website built by Privils Web
-              Dev! The design is professional, user-friendly, and perfectly
-              represents our construction business. The attention to detail,
-              responsiveness, and dedication throughout the project were
-              outstanding. Thank you for bringing our vision to life!.
-            </p>
-            <div className="client">
-                 <a href="https://d-m-projects.co.za/">
-                 <img
-                src=""
-                alt="d-m-projects logo"
-                className="client-img"
-              />
-
-                 </a>
-             
-              <h3>D-M-Projects</h3>
-            </div>
-          </div>
+         
           
         </div>
       </section>
