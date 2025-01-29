@@ -9,7 +9,7 @@ import Services from './Components/Services';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='portfolio'>
         <Header />
         <Routes>
           <Route index element={<Home />} />
