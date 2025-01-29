@@ -627,7 +627,7 @@ const Home = () => {
             <div className="client">
                  <a href="https://d-m-projects.co.za/">
                  <img
-                src={require("./images/359028.jpg")}
+                src=""
                 alt="d-m-projects logo"
                 className="client-img"
               />
