@@ -306,6 +306,341 @@ const Home = () => {
           </a>
         </div>
       </div>
+
+
+
+
+      <section className="testimonial-main"
+           data-aos="fade-in"
+          data-aos-duration="1300"
+          >
+        <h1 className="testimonial-header">testimonials</h1>
+        <div className="testimonials" 
+              data-aos="fade-up"
+              data-aos-easing="linear"
+             data-aos-duration="1000"
+        >
+
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+          <div className="testimonial-container">
+            <p>
+              We are extremely pleased with the website built by Privils Web
+              Dev! The design is professional, user-friendly, and perfectly
+              represents our construction business. The attention to detail,
+              responsiveness, and dedication throughout the project were
+              outstanding. Thank you for bringing our vision to life!.
+            </p>
+            <div className="client">
+                 <a href="https://d-m-projects.co.za/">
+                 <img
+                src={require("./images/clients/logo.jpg")}
+                alt="d-m-projects logo"
+                className="client-img"
+              />
+
+                 </a>
+             
+              <h3>D-M-Projects</h3>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
     </>
   );
 };
