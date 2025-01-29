@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa"; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState('');
@@ -12,10 +14,15 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); 
   };
-
+useEffect(()=>{
+  AOS.init()
+}, [])
   return (
     <header id='header'> 
-      <div className="container">
+      <div className="container" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
         <nav>
           <a href="#" className="logo">privilsWebDev</a>
           <ul id="sideMenu" className={isMenuOpen ? 'open' : ''}>
