@@ -18,8 +18,8 @@ import image5 from "./images/food site.png";
 import image6 from "./images/GAME.png";
 import image7 from "./images/shopping.png";
 import document1 from "./images/myCv.pdf";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -31,16 +31,24 @@ const Home = () => {
     setTab(tabName);
   };
 
-useEffect(()=>{
-  AOS.init();
-}, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+
+  useEffect(()=>{
+    if(window.location.hostname === "https://privils.github.io/portfolio/"){
+      window.location.replace("https://www.privilswebdev.co.za/")
+    }
+  })
   return (
     <>
-      <div id="about"  
-      data-aos="fade-up"
-      data-aos-easing="linear"
-     data-aos-duration="1300"
-     >
+      <div
+        id="about"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1300"
+      >
         <div className="container">
           <div className="row">
             <div className="col-1">
@@ -61,9 +69,8 @@ useEffect(()=>{
                 about, constantly working towards my goals—no matter how
                 ambitious they may seem.
               </p>
-              <div className="tabtitle"  
-         >
-                <p 
+              <div className="tabtitle">
+                <p
                   className={`tab-links ${
                     tab === "skills" ? "active-link" : ""
                   }`}
@@ -146,7 +153,7 @@ useEffect(()=>{
                   <li>
                     <p className="education">
                       <strong>Internship - frontend Developer</strong>
-                    </p> 
+                    </p>
                     | kreativestorm |
                     <p>
                       During my internship at kreativestorm, I worked on
@@ -185,28 +192,28 @@ useEffect(()=>{
       </div>
 
       <div id="services">
-        <div className="container"
-            
-            >
+        <div className="container">
           <h1 className="subtitle">my services</h1>
-          <div className="services-list"
+          <div
+            className="services-list"
             data-aos="fade-up"
-             data-aos-easing="ease"
-            data-aos-duration="1000">
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+          >
             <div>
               <FaCrop className="crop" />
               <h2>Front-End Development</h2>
               <p className="myServices">
-                Bring your website to life with my front-end development
-                expertise. I utilize my skills in HTML, CSS, Bootstrap, and
-                JavaScript to create interactive and engaging user interfaces.
-                Whether you need a dynamic single-page application or a fully
-                functional e-commerce platform, I deliver top-notch front-end
-                solutions that exceed your expectations. By focusing on
-                responsive design and user experience, I ensure your site looks
-                great on all devices and provides a seamless experience for your
-                users. Let's collaborate to build a visually appealing and
-                highly functional website that stands out.{" "}
+                I specialize in crafting interactive and engaging user
+                interfaces using HTML, CSS, Bootstrap, JavaScript, and React.
+                Whether you need a sleek single-page application or a visually
+                stunning e-commerce platform, I deliver high-quality front-end
+                solutions tailored to your needs. With a strong focus on
+                responsive design and user experience, I ensure your website
+                looks flawless on all devices, providing a seamless experience
+                for your visitors. Let's work together to build a modern,
+                visually appealing, and highly functional website that makes an
+                impact!
                 <a href="./Services" className="readmore">
                   read more
                 </a>
@@ -216,17 +223,20 @@ useEffect(()=>{
         </div>
       </div>
 
-      <div id="portfolio"      
-      data-aos="fade-up"
-      data-aos-easing="linear"
-     data-aos-duration="1000">
+      <div
+        id="portfolio"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div className="container">
           <h1 className="subtitle">my work</h1>
           <div className="work-list">
-            <div className="work" 
-                 data-aos="fade-up"
-                 data-aos-easing="linear"
-                data-aos-duration="600"
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="600"
             >
               <img src={image2} alt="" />
               <div className="layer">
@@ -237,11 +247,12 @@ useEffect(()=>{
                 </a>
               </div>
             </div>
-            <div className="work"
-                 data-aos="fade-up"
-                 data-aos-easing="linear"
-                data-aos-duration="800"
-                >
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="800"
+            >
               <img src={image5} alt="" />
               <div className="layer">
                 <h3>Food site</h3>
@@ -251,10 +262,12 @@ useEffect(()=>{
                 </a>
               </div>
             </div>
-            <div className="work"      
-            data-aos="fade-up"
-      data-aos-easing="linear"
-     data-aos-duration="1000">
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <img src={image6} alt="" />
               <div className="layer">
                 <h3>Game site</h3>
@@ -264,10 +277,12 @@ useEffect(()=>{
                 </a>
               </div>
             </div>
-            <div className="work"      
-            data-aos="fade-up"
-      data-aos-easing="linear"
-     data-aos-duration="600">
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="600"
+            >
               <img src={image3} alt="" />
               <div className="layer">
                 <h3>ART site</h3>
@@ -277,10 +292,11 @@ useEffect(()=>{
                 </a>
               </div>
             </div>
-            <div className="work"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                 data-aos-duration="800"
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="800"
             >
               <img src={image7} alt="" />
               <div className="layer">
@@ -291,10 +307,12 @@ useEffect(()=>{
                 </a>
               </div>
             </div>
-            <div className="work"    
-             data-aos="fade-up"
-      data-aos-easing="linear"
-     data-aos-duration="1000">
+            <div
+              className="work"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <img src={image4} alt="" />
               <div className="layer">
                 <h3>animals</h3>
@@ -311,18 +329,18 @@ useEffect(()=>{
         </div>
       </div>
 
-
-      <section className="testimonial-main"
-           data-aos="fade-in"
-          data-aos-duration="1300"
-          >
+      <section
+        className="testimonial-main"
+        data-aos="fade-in"
+        data-aos-duration="1300"
+      >
         <h1 className="testimonial-header">testimonials</h1>
-        <div className="testimonials" 
-              data-aos="fade-up"
-              data-aos-easing="linear"
-             data-aos-duration="1000"
+        <div
+          className="testimonials"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
         >
-
           <div className="testimonial-container">
             <p>
               We are extremely pleased with the website built by Privils Web
@@ -332,20 +350,18 @@ useEffect(()=>{
               outstanding. Thank you for bringing our vision to life!.
             </p>
             <div className="client">
-                 <a href="https://d-m-projects.co.za/">
-                 <img
-                src={require("./images/clients/logo.jpg")}
-                alt="d-m-projects logo"
-                className="client-img"
-              />
+              <a href="https://d-m-projects.co.za/">
+                <img
+                  src={require("./images/clients/logo.jpg")}
+                  alt="d-m-projects logo"
+                  className="client-img"
+                />
+              </a>
 
-                 </a>
-             
               <h3>D-M-Projects</h3>
             </div>
           </div>
-          </div>
-
+        </div>
       </section>
     </>
   );
