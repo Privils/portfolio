@@ -70,6 +70,8 @@ const Footer = () => {
           <li className="footer-li">Front-End Development</li>
           <li className="footer-li">Web Hosting</li>
           <li className="footer-li">Website Maintenance</li>
+          <li>Business Email Setup</li>
+          <li>Help with setting up Google Business Accounts</li>
         </ul>
       </div>
     </div>
