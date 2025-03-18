@@ -210,9 +210,16 @@ padding: 30px 0;
     background: #262626;
     padding: 40px;
     font-size: 13px;
-    font-weight: 300px;
+    font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+}
+.external{
+    color: #fff;
+}
+.external:hover{
+    color: #ff004f;
+    cursor: pointer;
 }
 .services-list  div .crop{
     font-size: 50px;
@@ -563,19 +570,7 @@ nav .icon{
   }
   /*------------testimonials-------------  */
  
-  .testimonials {
-    width: 100%;
-    height: 100%;
-    display: flex; 
-    flex-wrap: nowrap;
-    justify-content: center; 
-    padding: 15px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
-    margin: 10vh auto;
-}
+ 
 
 .testimonials::-webkit-scrollbar {
     display: none;
@@ -593,7 +588,7 @@ nav .icon{
     height: 100%;
     display: flex; 
     flex-wrap: nowrap;
-    justify-content: flex-start; 
+    justify-content: center; 
     padding: 15px;
     overflow-x: auto;
     scroll-behavior: smooth;
