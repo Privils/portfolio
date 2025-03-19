@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react'
-import { FaHeart,FaEnvelope, FaPhone,FaLinkedinIn, FaGithub, FaMapMarkerAlt,FaWhatsapp  } from "react-icons/fa"; 
-import document1 from "./images/myCv.pdf";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
+import React from 'react'
 
 const Footer = () => {
-    useEffect(() => {
-      AOS.init();
-    }, []);
-   
   return (
-    <div id='contact'>
+    <>
+     <div id='contact'>
       <div id="footer"
        data-aos="fade-up"
        data-aos-easing="ease"
@@ -86,9 +78,8 @@ const Footer = () => {
 
   </div>
 </div>
-
-        
-    </div>
+</div>
+    </>
   )
 }
 
