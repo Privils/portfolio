@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaEnvelope, FaGithub, FaHeart, FaLinkedinIn, FaMapMarkerAlt, FaPhone, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -37,10 +38,12 @@ const Footer = () => {
             <FaGithub />
           </a>
         </div>
-        <a href={document1} download className="btn btn2">
+        <a href={require('./images/myCv.pdf')} download className="btn btn2">
           Download CV
         </a>
       </div>
+      
+
       <div className="footer-section location"
        data-aos="fade-down"
        data-aos-easing="ease"

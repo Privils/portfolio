@@ -32,9 +32,7 @@ const Header = () => {
             </a>
             <ul id="sideMenu" className={isMenuOpen ? "open" : ""}>
             {!isHomePage && <li><Link to="/">Home</Link></li>}
-              {/* <li>
-                <a href="#header">home</a>
-              </li> */}
+             
   
   {isHomePage && (
                 <>

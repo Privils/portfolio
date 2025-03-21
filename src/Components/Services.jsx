@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
     useEffect(() => {
         AOS.init();
       }, []);
-    
     return (
     <>
      <div className="container my-5 bc-im"
