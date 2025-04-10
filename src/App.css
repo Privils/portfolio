@@ -345,8 +345,9 @@ font-weight: 400;
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 .layer a{
     display: flex;

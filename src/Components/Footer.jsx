@@ -20,7 +20,7 @@ const Footer = () => {
         <h2 className="footer-heading">Contact Me</h2>
         <p>
           <FaEnvelope className="leftIcon" />
-          contact@privilswebdev.co.za
+          info@privilswebdev.co.za
         </p>
         <p>
           <FaPhone className="leftIcon" />

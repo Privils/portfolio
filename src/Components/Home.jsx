@@ -318,7 +318,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-           <Link to="https://github.com/Privils" className="btn">
+           <Link to="./Portfolio" className="btn">
               see more
             </Link>
           </div>
