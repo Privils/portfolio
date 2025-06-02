@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Services from './components/Services';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
+import 'animate.css';
 
 function App() {
   return (

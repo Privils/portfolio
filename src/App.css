@@ -45,14 +45,24 @@ body {
 }
 
 nav {
+    position: relative;
+    top: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 10%;
+    padding: 15px 0px;
     transition: all 0.3s ease-in-out;
 }
-
+.sticky{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 80% !important;
+    box-shadow: 4px 5px 5px rgba(78, 76, 76, 0.774);
+    background: rgba(52, 49, 49, 0.5);
+}
 .logo {
     width: 140px;
     color: #ff004f;
@@ -61,6 +71,8 @@ nav {
     text-transform: capitalize;
     cursor: pointer;
 }
+
+
 
 nav ul li {
     display: inline-block;
@@ -660,9 +672,11 @@ nav .icon{
     .header-text h1{
         font-size: 30px;
     }
+   
     nav .icon{
         display: block;
         font-size: 25px;
+        margin-right: 15px;
     }
     nav ul {
         background: #ff004f;
