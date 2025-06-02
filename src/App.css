@@ -11,6 +11,8 @@ body {
     color: #fff;
     font-style: normal;
     overflow-x: hidden;
+    transition: linear .5s;
+     transition: all 0.3s ease-in;
 }
 
 #header {
@@ -56,12 +58,14 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 .sticky{
-    margin: 0;
+    margin: 1vh 0px;
     position: fixed;
     top: 0;
     width: 80% !important;
     box-shadow: 4px 5px 5px rgba(78, 76, 76, 0.774);
-    background: rgba(52, 49, 49, 0.5);
+    background: rgba(25, 24, 24, 0.82);
+    z-index: 1000;
+    padding: 6px;
 }
 .logo {
     width: 140px;
@@ -313,14 +317,25 @@ list-style-type: lower-greek;
     color: #ff004f;
 }
  
-/**/
+/*portolio*/
 #portfolio{
 padding: 50px 0;
 font-family: "Playfair Display", serif;
 font-optical-sizing: auto;
 font-weight: 400;
 }
-.work-list{
+.main, .container{
+     padding: 10px 10%;
+}
+.main h1{
+    color: #ff004f;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 2.3em;
+    text-decoration: underline;
+    margin: 10px;
+}
+.beginner, .Intermediate, .advanced, .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
@@ -330,7 +345,7 @@ font-weight: 400;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-  
+    margin-bottom: 3vw;
 }
 .work img{
     width: 100%;

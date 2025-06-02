@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(()=>{
+      AOS.init();
+        
+  }, [])
   return (
   <>
  <section className="main">
-    <div className="container">
-    <div className="work-list">
-    <div
+  <h1>
+    beginner level projects
+  </h1>
+ <div className="beginner">
+<div
                      className="work"
-                     data-aos="fade-up"
+                     data-aos="fade-down"
                      data-aos-easing="linear"
                      data-aos-duration="1000"
                    >
@@ -27,7 +35,7 @@ const Portfolio = () => {
 
                    <div
                      className="work"
-                     data-aos="fade-up"
+                     data-aos="fade-down"
                      data-aos-easing="linear"
                      data-aos-duration="1000"
                    >
@@ -42,7 +50,7 @@ const Portfolio = () => {
                    </div>
                    <div
                      className="work"
-                     data-aos="fade-up"
+                     data-aos="fade-down"
                      data-aos-easing="linear"
                      data-aos-duration="1000"
                    >
@@ -70,7 +78,7 @@ const Portfolio = () => {
                        </Link>
                      </div>
                    </div>
-                   <div
+                      <div
                      className="work"
                      data-aos="fade-up"
                      data-aos-easing="linear"
@@ -85,7 +93,12 @@ const Portfolio = () => {
                        </Link>
                      </div>
                    </div>
-                   <div
+ </div>
+
+  <h1>intermediate level projects</h1>
+
+<div className="Intermediate">
+        <div
                      className="work"
                      data-aos="fade-up"
                      data-aos-easing="linear"
@@ -220,6 +233,45 @@ const Portfolio = () => {
                        </Link>
                      </div>
                    </div>
+    <div
+                     className="work"
+                     data-aos="fade-up"
+                     data-aos-easing="linear"
+                     data-aos-duration="1000"
+                   >
+                     <img src={require('./images/projectsImages/contact form.png')} alt="" />
+                     <div className="layer">
+                       <h3>contact form</h3>
+       
+                      <Link to="https://privils.github.io/contact-form/">
+                         <FaExternalLinkAlt className="FaExternalLinkAlt" />
+                       </Link>
+                     </div>
+                   </div>
+                    <div
+                     className="work"
+                     data-aos="fade-up"
+                     data-aos-easing="linear"
+                     data-aos-duration="1000"
+                   >
+                     <img src={require('./images/projectsImages/login form.png')} alt="" />
+                     <div className="layer">
+                       <h3>login form</h3>
+       
+                      <Link to="https://privils.github.io/login-form/">
+                         <FaExternalLinkAlt className="FaExternalLinkAlt" />
+                       </Link>
+                     </div>
+                   </div>
+                   
+
+</div>
+
+  <h1>advanced level projects</h1>
+    <div className="advanced">
+    
+                
+           
                     <div
                      className="work"
                      data-aos="fade-up"
@@ -250,7 +302,22 @@ const Portfolio = () => {
                        </Link>
                      </div>
                    </div>
-    </div>
+
+                    <div
+                     className="work"
+                     data-aos="fade-up"
+                     data-aos-easing="linear"
+                     data-aos-duration="1000"
+                   >
+                     <img src={require('./images/projectsImages/willow-home.png')} alt="" />
+                     <div className="layer">
+                       <h3>willow home</h3>
+       
+                      <Link to="https://privils.github.io/willowhome/">
+                         <FaExternalLinkAlt className="FaExternalLinkAlt" />
+                       </Link>
+                     </div>
+                   </div>
     </div>
  </section>  
   </>
