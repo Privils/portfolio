@@ -40,10 +40,7 @@ const Home = () => {
               <p>
                 Hi, my name is  <span id="my-name">Priviledge M</span>, and I’m a 21-year-old web developer
                 based in Cape Town, South Africa. I’m passionate about building
-                clean, functional, and user-friendly websites. I’m currently
-                leveling up my front-end skills by learning <span id="my-name">Tailwind CSS</span>, which
-                I’m actively applying in personal and client projects to improve
-                design efficiency and responsiveness. My goal is to grow as a
+                clean, functional, and user-friendly websites. My goal is to grow as a
                 front-end developer by continuously learning, creating, and
                 helping individuals and businesses bring their online presence
                 to life. I’m also building my freelance web development brand,
