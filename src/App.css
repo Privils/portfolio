@@ -10,7 +10,7 @@ body {
     background: black;
     color: #fff;
     font-style: normal;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     transition: linear .5s;
      transition: all 0.3s ease-in;
 }
@@ -414,37 +414,6 @@ font-weight: 400;
 .btn:hover{
     background-color: #ff004f;
 }
-/*contact*/
-/* #contact{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-} */
-.contact-left{
-    flex-basis: 100%;
-   font-family: "Playfair Display", serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   align-items: center;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.myServices{
-    font-family: 'Times New Roman', Times, serif !important;
-    font-size: 16px;
-}
- .leftIcon{
-    color: #ff004f;
-    margin-right: 5px;
-    font-size: 18px;
-}
-.leftIcon:hover{
-    color: #ffffff;
-    transition: 1s ease;
-    cursor: pointer;
-}
-
 
 .footericon{
     color: #ff004f;
@@ -452,7 +421,10 @@ font-weight: 400;
     font-size: 18px;
 }
 .social-icons{
-    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 .social-icons a{
  text-decoration: none;
@@ -466,16 +438,13 @@ font-weight: 400;
     cursor: pointer;
     transition: .5s ease-in;
    }
-.contact-right{
-    flex-basis: 35%;
-}
+
 .social-icon{
     margin-top: 30px;
 }
 .social-icon a{
  text-decoration: none;
  font-size: 30px;
- margin-right: 15px;
  color: #ababab;
  display: inline-block;
  transition: transfrom 0.5s;
@@ -484,13 +453,17 @@ font-weight: 400;
 color: #ff004f;
 transform: translateY(-5px);
 }
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn.btn2{
 display: inline-block;
 background: #ff004f;
 }
-.contact-right  form{
-    width: 100%;
-}
+
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -512,8 +485,16 @@ cursor: pointer;
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: transparent;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyrite p{
+    background: #262626;
+    padding: 20px 0px;
+    width: 70%;
 }
 .copyrite p a{
     color: #fff;
@@ -535,40 +516,74 @@ nav .icon{
   #sideMenu.open {
     right: 0; 
   }
-  #note{
-    color: #ff004f;
-    font-size: 15px;
-    font-style: italic;
-  }
   .education{
     color: #b547b5;
   }
   /* footer */
-  #footer {
+  .footer {
     background-color: #333; 
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 0px;
     font-family: Arial, sans-serif;
+  }
+  .footerContent{
+    display: flex;
+    justify-content: space-between;
   }
     
  #container {
-    width: 80%;
-    margin: 0 auto;
+   width: 45%;
+   height: inherit;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
   #row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5vh 0px;
+  }
+  #row form{
+    height: auto;
+     width: 80%;
+    border-radius: 10px;
+    border: 2px solid #5d5a5a;
+    padding: 15px 10%;
+    box-shadow: 3px 3px 2px #262626,
+                -3px -3px 2px #262626;
+  }
+  #row form label{
+  text-transform: capitalize;
+    font-size: 23px;
+    margin: 10px;
+    font-family: playFair;
+  }
+ #row form input{
+    text-transform: capitalize;
   }
   .footer-section {
-    width: 30%; 
+    width: 100%; 
     margin-bottom: 20px;
+    padding: 3vh 5vw;
   }
+
+   .footer-section h2{
+    margin: 15px;
+    text-align: center;
+  }
+  .footer-section ul li{
+   padding: 10px;
+  }
+ 
+ 
   .footer-heading {
     font-size: 1.6em;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 6vh;
     color:   #ff004f;
+    text-transform: capitalize;
   }
  .footer-section p {
     font-size: 1em;
@@ -596,6 +611,7 @@ nav .icon{
     content: "• ";
     color: #ff004f;
   }
+
   /*------------testimonials-------------  */
  
  
@@ -731,9 +747,6 @@ nav .icon{
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right{
-flex-basis: 100%;
-    }
     .copyrite{
         font-size: 14px;
     }
@@ -762,6 +775,32 @@ flex-basis: 100%;
         align-items: center;
       }
 }
+@media (max-width: 768px) {
+      .footerContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+   #container {
+    width: 100%;
+   flex-direction: row;
+   align-items: flex-start;
+  }
+  #row {
+  width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5vh 0px;
+  }
+
+
+
+  .footerContent{
+    width: 100%;
+    margin: 0;
+  }
+}
 @media (max-width: 440px) {
     .logo{
         width: 140px;
@@ -771,4 +810,9 @@ flex-basis: 100%;
         text-transform: capitalize;
         cursor: pointer;
     }
+     #container {
+   width: 100%;
+   flex-direction: column;
+  }
+     
 }
