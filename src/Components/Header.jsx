@@ -24,23 +24,25 @@ const Header = () => {
     setIsSticky(window.scrollY > 50)
   }
     const location = useLocation(); 
-      useEffect(() => {
-        AOS.init();
-    
-         typedInstance.current = new Typed(typedElement.current, {
-      strings: [" hi, im <span>priviledge</span> <br />a developer based in <br /><i> <span>cape town s.a</span></i>"],
-      typeSpeed: 125,
-      backSpeed: 25,
-      loop: true,
-    });
- window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+  useEffect(() => {
+  AOS.init();
+  
+  typedInstance.current = new Typed(typedElement.current, {
+    strings: ["hi, im <span>priviledge</span><br/>a developer based in <br /><i> <span>cape town s.a</span></i>"],
+    typeSpeed: 125,
+    backSpeed: 25,
+    loop: true,
+  });
 
-    // Destroy Typed instance on unmount to prevent memory leaks
-    return () => {
-      typedInstance.current.destroy();
-    };
-      }, []);
+  window.addEventListener("scroll", handleScroll);
+  
+  // Cleanup event listener and Typed instance
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    typedInstance.current.destroy(); // This cleans up Typed.js when component unmounts
+  };
+}, []);
+
 
 
       const isHomePage = location.pathname === "/";
@@ -74,9 +76,7 @@ const Header = () => {
          </nav>
           
           <div className="header-text">
-            <p id="Jobtitle" className='animate__animated animate__lightSpeedInRight animate__delay 2s	-2.5s' data-aos="fade"
-        data-aos-easing="linear"
-        data-aos-duration="800">front-end developemt</p>
+            <p id="Jobtitle" className='animate__animated animate__lightSpeedInRight animate__delay 2s	-2.5s'>front-end developemt</p>
             <h1 ref={typedElement} className="intro">
              
             </h1>
@@ -87,3 +87,5 @@ const Header = () => {
 }
 
 export default Header
+
+

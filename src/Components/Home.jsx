@@ -186,7 +186,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div id="services">
         <div className="container">
           <h1 className="subtitle">my services</h1>
@@ -324,7 +323,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
       <section
         className="testimonial-main"
         data-aos="fade-in"
