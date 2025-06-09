@@ -52,7 +52,7 @@ body {
 
 @media (max-width: 768px) {
   #header {
-    background-image: url("./components/images/359028for\ 768.jpg");
+    background-image: url("./components/images/359028for768.jpg");
     background-position: center;
   }
 }
@@ -368,7 +368,7 @@ i span {
 .sub {
   color: #ff004f;
 }
-*/
+
  
 /*portolio*/
 #portfolio {
@@ -620,7 +620,7 @@ form textarea {
 .btnContainer {
   width: 100%;
   display: flex;
-  justify-content: space space-evenly;
+  justify-content: space-evenly;
 }
 
 #row form label {
