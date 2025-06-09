@@ -24,13 +24,13 @@ const Home = () => {
   });
   return (
     <>
-      <div
-        id="about"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-duration="1300"
-      >
-        <div className="container">
+      <div id="about">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1300"
+        >
           <div className="row">
             <div className="col-1">
               <img src={require("./images/me.jpg")} alt="" className="img" />
@@ -38,17 +38,18 @@ const Home = () => {
             <div className="col-2">
               <h1 className="subtitle">about me</h1>
               <p>
-                Hi, my name is  <span id="my-name">Priviledge M</span>, and I’m a 21-year-old web developer
-                based in Cape Town, South Africa. I’m passionate about building
-                clean, functional, and user-friendly websites. My goal is to grow as a
-                front-end developer by continuously learning, creating, and
-                helping individuals and businesses bring their online presence
-                to life. I’m also building my freelance web development brand,
-                offering website creation, hosting, and maintenance services.
-                Outside of coding, I enjoy art, music, exploring new
-                experiences, and playing chess. I believe in pouring genuine
-                effort into everything I do and consistently working toward my
-                goals—no matter how ambitious they may be.
+                Hi, my name is <span id="my-name">Priviledge M</span>, and I’m a
+                22-year-old web developer based in Cape Town, South Africa. I’m
+                passionate about building clean, functional, and user-friendly
+                websites. My goal is to grow as a front-end developer by
+                continuously learning, creating, and helping individuals and
+                businesses bring their online presence to life. I’m also
+                building my freelance web development brand, offering website
+                creation, hosting, and maintenance services. Outside of coding,
+                I enjoy art, music, exploring new experiences, and playing
+                chess. I believe in pouring genuine effort into everything I do
+                and consistently working toward my goals—no matter how ambitious
+                they may be.
               </p>
               <div className="tabtitle">
                 <p
@@ -96,16 +97,6 @@ const Home = () => {
                     Git <br />
                     NPM
                   </li>
-                  {
-                    <li>
-                      <span>back-end</span>
-                      <br />
-                      Node.js <br />
-                      Postgres <br />
-                      Express.JS <br />
-                      <br />
-                    </li>
-                  }
                 </ul>
               </div>
               <div
@@ -210,7 +201,7 @@ const Home = () => {
                 visually appealing, and highly functional website that makes an
                 impact!
                 <Link to="./Services" className="readmore">
-                  read more
+                  Explore services
                 </Link>
               </p>
             </div>
@@ -220,6 +211,7 @@ const Home = () => {
 
       <div
         id="portfolio"
+        className="portfolio"
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="1000"
@@ -278,11 +270,11 @@ const Home = () => {
               data-aos-easing="linear"
               data-aos-duration="600"
             >
-              <img src={require("./images/ART.png")} alt="" />
+              <img src={require("./images/poke.png")} alt="" />
               <div className="layer">
-                <h3>ART site</h3>
+                <h3>Poke pal</h3>
 
-                <Link to="https://privils.github.io/art/">
+                <Link to="https://privils.github.io/Poke-Pal/">
                   <FaExternalLinkAlt className="FaExternalLinkAlt" />
                 </Link>
               </div>
@@ -318,40 +310,43 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <Link to="./Portfolio" className="btn">
-            see more
-          </Link>
+          <div className="btnContainer">
+            <Link to="./Portfolio" className="btn">
+              see more
+            </Link>
+          </div>
         </div>
       </div>
+
       <section
         className="testimonial-main"
         data-aos="fade-in"
         data-aos-duration="1300"
       >
-        <h1 className="testimonial-header">testimonials</h1>
+        <h1 className="subtitle text-end">testimonials</h1>
+
         <div
           className="testimonials"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1000"
         >
-          <div className="testimonial-container">
+          <div className="testimonial-card">
             <p>
               We are extremely pleased with the website built by Privils Web
               Dev! The design is professional, user-friendly, and perfectly
               represents our construction business. The attention to detail,
               responsiveness, and dedication throughout the project were
-              outstanding. Thank you for bringing our vision to life!.
+              outstanding. Thank you for bringing our vision to life!
             </p>
-            <div className="client">
+            <div className="client-info">
               <Link to="https://d-m-projects.co.za/">
                 <img
                   src={require("./images/359028.jpg")}
-                  alt="d-m-projects logo"
+                  alt="D-M Projects Logo"
                   className="client-img"
                 />
               </Link>
-
               <Link to="https://d-m-projects.co.za/" className="external">
                 <h3>D-M-Projects</h3>
               </Link>
