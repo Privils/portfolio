@@ -124,6 +124,26 @@ const Footer = () => {
               </a>
             </div>
           </div>
+           <div
+            className="footer-section location"
+            data-aos="fade-down"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <h2 className="footer-heading">contact us</h2>
+            <p>
+              <FaPhone className="leftIcon" />
+              065 916 5816
+            </p> <br />
+             <p>
+              <FaEnvelope className="leftIcon" />
+              privilledgeBlack8@gmail.com
+            </p> <br />
+             <p>
+              <FaWhatsapp className="leftIcon" />
+               065 916 5816
+            </p>
+          </div>
         </div>
 
         <div
