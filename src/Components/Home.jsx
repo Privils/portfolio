@@ -331,6 +331,8 @@ const Home = () => {
           data-aos-easing="linear"
           data-aos-duration="1000"
         >
+
+
           <div className="testimonial-card">
             <p>
               We are extremely pleased with the website built by Privils Web
@@ -352,6 +354,111 @@ const Home = () => {
               </Link>
             </div>
           </div>
+
+          <div className="testimonial-card">
+  <p>
+    Privils Web Dev exceeded our expectations! They created a stunning and functional online store for us. The site is fast, mobile-friendly, and exactly what we needed to grow our online sales. Highly recommended!
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/bakery-client.jpg")}
+        alt="Bakery Client Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>Sweet Crumbs Bakery</h3>
+    </Link>
+  </div>
+</div>
+<div className="testimonial-card">
+  <p>
+    Working with Privils Web Dev was a smooth experience from start to finish. They listened to our ideas and delivered a sleek, modern site that really speaks to our brand. We appreciate their patience and professionalism.
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/consulting-client.jpg")}
+        alt="Consulting Company Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>Modern Consult</h3>
+    </Link>
+  </div>
+</div>
+<div className="testimonial-card">
+  <p>
+    The team at Privils Web Dev did an excellent job on our website redesign. Not only does it look great, but our traffic and engagement have improved significantly since launch. Great communication and timely delivery!
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/landscape-client.jpg")}
+        alt="Landscaping Company Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>Green Landscapes</h3>
+    </Link>
+  </div>
+</div>
+<div className="testimonial-card">
+  <p>
+    Thank you Privils Web Dev for the incredible job you did with our portfolio site. Your creativity and skill helped us showcase our work in the best way possible. We’re proud to share our link with clients now.
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/art-client.jpg")}
+        alt="Art Studio Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>ArtSpace Studio</h3>
+    </Link>
+  </div>
+</div>
+<div className="testimonial-card">
+  <p>
+    We had no idea where to start with our website, but Privils Web Dev made the process simple and enjoyable. They explained everything clearly and delivered a polished product we’re proud of. Thank you for your hard work!
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/clinic-client.jpg")}
+        alt="Clinic Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>HealthFirst Clinic</h3>
+    </Link>
+  </div>
+</div>
+<div className="testimonial-card">
+  <p>
+    From branding to web design, Privils Web Dev handled everything with care and creativity. Our new website looks clean, professional, and is easy to use. We’re already seeing more client inquiries come in!
+  </p>
+  <div className="client-info">
+    <Link to="#">
+      <img
+        src={require("./images/clients/legal-client.jpg")}
+        alt="Law Firm Logo"
+        className="client-img"
+      />
+    </Link>
+    <Link to="#" className="external">
+      <h3>LegalWise Group</h3>
+    </Link>
+  </div>
+</div>
+
+
         </div>
       </section>
     </>
